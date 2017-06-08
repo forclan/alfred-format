@@ -1,4 +1,6 @@
 var jsbeautify = require('js-beautify');
 
-var formattedData = jsbeautify(process.argv[2]);
+var data = process.argv[2];
+
+var formattedData = jsbeautify(data, { indent_size: 2});
 console.log(formattedData);
